@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Calculadora de Idade</h1>
+
+    <main class="container">
+      <div class="input">
+        <!-- Birthdate -->
+        <label for="birthdate">Data de Nascimento:</label>
+        <input type="date" id="birthdate" />
+      </div>
+
+      <ul>
+        <!-- Display Output -->
+        <li><span id="years"></span> Anos</li>
+        <li><span id="months"></span> Meses</li>
+        <li><span id="days"></span> Dias</li>
+        <li><span id="hors"></span> Horas</li>
+        <li><span id="minutes"></span> Minutos</li>
+        <li><span id="seconds"></span> Segundos</li>
+      </ul>
+
+      <!-- Buttons -->
+      <div class="btns">
+        <button onclick="calculate()">Calcular</button>
+        <button onclick="reset()">Resetar</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
